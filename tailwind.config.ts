@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'serif'],
+        sans: ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,22 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        footer: {
+          DEFAULT: "hsl(var(--footer-background))",
+          foreground: "hsl(var(--footer-foreground))",
+        },
+        announcement: {
+          DEFAULT: "hsl(var(--announcement-background))",
+          foreground: "hsl(var(--announcement-foreground))",
+        },
+        sale: {
+          DEFAULT: "hsl(var(--sale-background))",
+          foreground: "hsl(var(--sale-foreground))",
+        },
+        soldout: {
+          DEFAULT: "hsl(var(--soldout-background))",
+          foreground: "hsl(var(--soldout-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +85,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
