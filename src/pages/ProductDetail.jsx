@@ -46,7 +46,7 @@ const ProductDetail = () => {
             
             {/* Product Images */}
             <div>
-              <div className="aspect-square overflow-hidden bg-card mb-4">
+              <div className="aspect-square rounded-3xl overflow-hidden bg-card mb-4">
                 <img
                   src={images[selectedImage]}
                   alt={product.name}
@@ -55,12 +55,12 @@ const ProductDetail = () => {
               </div>
 
               {images.length > 1 && (
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                   {images.map((img, index) => (
                     <button
                       key={index}
                       onClick={() => setSelectedImage(index)}
-                      className={`aspect-square overflow-hidden bg-card border-2 ${
+                      className={`aspect-square rounded-3xl overflow-hidden bg-card border-2 ${
                         selectedImage === index
                           ? "border-primary"
                           : "border-transparent"

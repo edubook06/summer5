@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <Link to={`/product/${product.slug}`} className="group block">
-      <div className="relative aspect-square overflow-hidden bg-card mb-4">
+      <div className="relative aspect-square rounded-3xl overflow-hidden bg-card mb-4">
         <img 
           src={product.image} 
           alt={product.name}

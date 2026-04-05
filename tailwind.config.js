@@ -98,5 +98,5 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
-  // plugins: [],
+  plugins: [require('tailwindcss-intersect')]
 };

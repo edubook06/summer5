@@ -13,6 +13,8 @@ import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+
 
 const queryClient = new QueryClient();
 
@@ -32,6 +34,7 @@ const App = () => (
             <Route path="/cart" element={<Cart />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />}/>
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

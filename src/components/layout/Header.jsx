@@ -6,7 +6,7 @@ const Header = ({ cartCount = 0 }) => {
   return (
     <header className="w-full">
       {/* Announcement Bar */}
-      <div className="bg-announcement text-announcement-foreground py-3 text-center text-sm">
+      <div className="bg-announcement text-announcement-foreground py-3 text-center text-sm bg-gradient-to-r from-[#E3DBCF] via-[#BBB1A4] to-[#E3DBCF] ">
         <Link to="/shop" className="hover:underline inline-flex items-center gap-1">
           Enjoy Free Shipping Sitewide
           <span aria-hidden="true">→</span>
@@ -17,9 +17,9 @@ const Header = ({ cartCount = 0 }) => {
       <div className="bg-background py-6 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Search Icon */}
-            <button className="p-2 hover:opacity-70 transition-opacity" aria-label="Search">
-              <Search className="w-5 h-5" />
-            </button>
+          <button className="p-2 hover:opacity-70 transition-opacity" aria-label="Search">
+            <Search className="w-5 h-5" />
+          </button>
 
           {/* Logo */}
           <Link to="/" className="text-3xl lg:text-4xl tracking-[0.3em] font-serif font-medium">
@@ -44,26 +44,40 @@ const Header = ({ cartCount = 0 }) => {
 
         {/* Navigation */}
         <nav className="flex justify-center gap-8 mt-4 text-sm">
-          <NavLink 
-            to="/shop" 
+          <NavLink
+            to="/shop"
             className="hover:underline underline-offset-4"
             activeClassName="underline"
           >
             Shop All
           </NavLink>
-          <NavLink 
-            to="/category/bathtubs" 
+          <NavLink
+            to="/category/living-room"
             className="hover:underline underline-offset-4"
             activeClassName="underline"
           >
-            Bathtubs
+            Living Room
           </NavLink>
-          <NavLink 
-            to="/category/kitchen" 
+          <NavLink
+            to="/category/bathroom"
+            className="hover:underline underline-offset-4"
+            activeClassName="underline"
+          >
+            Bathroom
+          </NavLink>
+          <NavLink
+            to="/category/kitchen"
             className="hover:underline underline-offset-4"
             activeClassName="underline"
           >
             Kitchen
+          </NavLink>
+          <NavLink
+            to="/category/outdoor"
+            className="hover:underline underline-offset-4"
+            activeClassName="underline"
+          >
+            Outdoor
           </NavLink>
           <NavLink 
             to="/category/living-room" 

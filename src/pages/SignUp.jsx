@@ -53,10 +53,7 @@ const SignUp = () => {
                                     Login<span aria-hidden="true">→</span>
                                 </Link>
                             </div>
-                        </div>
-                        
-                            
-                         
+                        </div>                         
                 </div>
             </div>
         </Layout>
@@ -65,3 +62,4 @@ const SignUp = () => {
 };
 
 export default SignUp;
+
